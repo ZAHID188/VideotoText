@@ -16,10 +16,20 @@ check `req.py` for installing neccesary packeges
 In this file `video` will be extracted into `audio`
 
 # 2. audio_to_text
-In this file `audio` will be extracted into `japanese text` and store into `DB`
+In this file `audio` will be extracted into `japanese text` 
 japanese text will be marked with timeframe
 
-# 3. Japanese_to_EN_CN
+# 3. japnese text into database
+ `japanese text` will be store into `DB`
+ 1. video loaction
+ 2. video title
+ 3. japnese text
+
+
+# 4. Japanese_to_EN_CN
+argostranslate -200mb, 
+install packeges-zh,ja,en
+[translation](https://pypi.org/project/argostranslate/)
 In this file `japanese text` will be translated into `English and Chinese` and store into `DB`
 
 

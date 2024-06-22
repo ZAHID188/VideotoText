@@ -22,9 +22,9 @@ cursor.execute("""
     chinese TEXT);""")
 
 # Define the data to be inserted
-jap = "jajajajajaja"
-eng = "eeeee"
-cn="casda"
+jap = "bbbb"
+eng = "bbbbb"
+cn="bbbbb"
 
 # Prepare the SQL query
 sql = "INSERT INTO translations (original_Jap, english, chinese) VALUES (%s, %s,%s)"

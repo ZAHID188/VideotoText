@@ -1,4 +1,19 @@
-VTT_ENV/
+
 audio/
 video/
 temp/
+# Python virtual environment
+VTT_ENV/
+*.venv/
+
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Editor and IDE files
+.idea/
+.vscode/
+*.swp
+*.swo

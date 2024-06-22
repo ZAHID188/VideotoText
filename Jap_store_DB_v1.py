@@ -30,3 +30,25 @@ def jp_insert_into_database(vid_D,vid_t,jap_t,en_t,zh_t):
     print("Data inserted successfully!")
 
 
+def jp_get_value(x):
+    # Execute the SQL query
+    query = "SELECT * FROM All_Text WHERE vid_tittle = %s"
+    values = (x,)
+    cursor.execute(query,values)
+    # Fetch the results
+    results = cursor.fetchall()
+    # Print the results
+    # for row in results:
+    #     print(f"ID: {row[0]}")
+    #     print(f"Video Directory: {row[1]}")
+    #     print(f"Video Title: {row[2]}")
+    #     print(f"Japanese Text: {row[3]}")
+        
+
+    db.close()
+    return results
+
+
+# NewdatabaseCreate()
+# jp_insert_into_database('sasd','sasd','sasd')
+# jp_get_value('vid1.mp4')
